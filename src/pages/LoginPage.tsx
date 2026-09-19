@@ -84,8 +84,8 @@ export const LoginPage: React.FC = () => {
       </div>
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-white shadow-xl shadow-teal-600/15 border-2 border-teal-100 p-2 mb-4">
-          <img src={ASSETS.logo} alt="Ofok Logo" className="w-full h-full object-cover rounded-2xl" />
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-white shadow-xl shadow-teal-600/15 border border-teal-100 p-2.5 mb-4">
+          <img src={ASSETS.logo} alt="Ofok Logo" className="w-full h-full object-contain" />
         </div>
         <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">
           {t('login.title')}

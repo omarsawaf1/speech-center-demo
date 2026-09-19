@@ -104,8 +104,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         {/* Brand Header */}
         <div className="h-16 flex items-center justify-between px-4 border-b border-slate-100 bg-white">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl overflow-hidden border border-teal-200 bg-teal-50 flex items-center justify-center shrink-0">
-              <img src={ASSETS.logo} alt="Ofok" className="w-full h-full object-cover" />
+            <div className="w-9 h-9 rounded-xl overflow-hidden border border-teal-200/80 bg-teal-50/60 flex items-center justify-center p-1 shrink-0">
+              <img src={ASSETS.logo} alt="Ofok" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col min-w-0">
               <h1 className="text-sm font-bold text-slate-800 leading-tight truncate">

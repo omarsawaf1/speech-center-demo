@@ -85,11 +85,11 @@ export const PublicLayout: React.FC = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo and Brand */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-md border-2 border-teal-500/20 group-hover:scale-105 transition-transform bg-teal-50 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-xs border border-teal-500/20 group-hover:scale-105 transition-transform bg-teal-50/60 flex items-center justify-center p-1.5">
                 <img 
                   src={ASSETS.logo} 
                   alt="Ofok Center Logo" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   onError={(e) => {
                     // Fallback to text if image not loaded
                     (e.target as HTMLElement).style.display = 'none';
