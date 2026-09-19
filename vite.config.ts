@@ -5,7 +5,8 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Essential for GitHub Pages deployment
+  // In production for GitHub Pages repository omarsawaf1/speech-center-demo
+  base: process.env.NODE_ENV === 'production' ? '/speech-center-demo/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
